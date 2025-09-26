@@ -1,8 +1,6 @@
-IDS=["6olE6TJLqED3rqDCT0FyPh",
-"7jy3rLJdDQY21OgRLCZ9sD",
-"64tNsm6TnZe2zpcMVMOoHL",
-"6FBDaR13swtiWwGhX1WQsP",
-"1w5Kfo2jwwIPruYS2UWh56",
-"5xUf6j4upBrXZPg6AI4MRK",
-"2ziB7fzrXBoh1HUPS6sVFn",
-"0iHb0mCbqZTYeb4y9Pirrd"]
+URL = "https://disease.sh/v3/covid-19/historical/all?lastdays=all"
+
+URL_COUNTRY = "https://disease.sh/v3/covid-19/historical/{country}?lastdays=all
+"
+
+

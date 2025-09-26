@@ -1,1 +1,1 @@
-from .constant import IDS
+from .constant import URL
