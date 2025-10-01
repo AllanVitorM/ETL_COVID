@@ -3,11 +3,12 @@ import requests
 import pandas as pd
 from datetime import datetime
 
-URL_VACCINE_BRAZIL = "https://disease.sh/v3/covid-19/vaccine/coverage/countries/brazil?lastdays=all"
+URL_VACCINE_BRAZIL = 
 
 class ExtractVaccineBrazil:
-    def __init__(self, url=URL_VACCINE_BRAZIL, timeout=10):
-        self.url = url
+    def __init__(self, url=URL_VACCINE_BRAZIL, country, timeout=10):
+        self.country = country
+        self.url = f"https://disease.sh/v3/covid-19/vaccine/coverage/countries/{country}?lastdays=all"
         self.timeout = timeout
 
     def _parse_timeline(self, timeline):
@@ -66,7 +67,3 @@ class ExtractVaccineBrazil:
         
         raise RuntimeError("Resposta da API sem campo 'timeline' com dados de vacinação.")
 
-if __name__ == "__main__":
-    e = ExtractVaccineBrazil()
-    df = e.extract()
-    print(df.head())
