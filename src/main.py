@@ -7,7 +7,7 @@ class Main:
         pass
     
     def run(self):
-        e = ExtractCovidStates("vietnam")
+        e = ExtractCovidStates("China")
         df = e.extract_data()
         populacao = e.get_population()
         
@@ -15,7 +15,7 @@ class Main:
         df_t = t.transform_data(df)
         
         l = LoadCovidStates()
-        l.save_csv(df_t, "covid_vietnam.csv")
+        l.save_csv(df_t, "covid_China.csv")
         
         
         print(df_t.head(15))
