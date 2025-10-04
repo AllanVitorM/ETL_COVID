@@ -23,17 +23,13 @@ ETL_COVID/
 │ │ │ ├── extract.py # Extração de dados (API)
 │ │ │ ├── transform.py # Transformação de dados
 │ │ │ └── load.py # Salvamento dos CSVs
-│ ├── utils/ # Funções auxiliares (se houver)
+│ ├── utils/ 
 │ └── main.py # Arquivo principal para rodar a ETL
-│
+│ └── app.py # Arquivo principal para rodar o Streamlit
 ├── output/ # CSVs gerados pela ETL
 │ ├── covid_brazil.csv
 │ ├── covid_vietnam.csv
 │ └── ...
-│
-├── streamlit_app/ # Dashboard interativo (opcional)
-│ └── app.py
-│
 ├── requirements.txt
 └── README.md
 ```
