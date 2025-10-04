@@ -16,7 +16,7 @@ O pipeline coleta dados históricos de casos, mortes e recuperações por país,
 ---
 
 ## 🧩 Estrutura do Projeto
-
+```bash
 ETL_COVID/
 ├── src/
 │ ├── ETL/
@@ -36,7 +36,7 @@ ETL_COVID/
 │
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 ### 🧰 1. Instalar dependências
@@ -45,14 +45,12 @@ Crie um ambiente virtual e instale os pacotes necessários:
 python -m venv .venv
 pip install -r requirements.txt
 ---
-
----
+```
 ▶️ 2. Rodar o pipeline ETL
 
 Para executar o fluxo completo de extração, transformação e carga:
-
+```bash
 python -m src.main
-
 
 Isso irá:
 
@@ -61,13 +59,14 @@ Buscar os dados da COVID-19 (por exemplo, do Vietnã ou Brasil)
 Processar e calcular indicadores
 
 Gerar o arquivo CSV em output/covid_<país>.csv
-
+```
 
 📊 3. Executar o Dashboard (opcional)
-
+```bash
 Após gerar os CSVs, você pode visualizar os dados no Streamlit:
 
 python -m streamlit run streamlit_app/app.py
 
 
 O dashboard permitirá aplicar filtros por país, período e indicador, além de visualizar gráficos, tabelas e métricas-chave.
+```
